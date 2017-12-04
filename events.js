@@ -31,8 +31,8 @@ console.log("here");
 //function that will change output target text
 function printToOutputTarget () {
     // var pForOutput = document.createElement("")
-    for (i = 0; i < sectionArray.length; i++)
-    outputTarget.innerHTML = `<p>You clicked on the ${sectionArray[i].innerHTML} section </p>`
+    
+    outputTarget.innerHTML = `<p>You clicked on the ${sectionArray.innerHTML} section </p>`
     console.log("here");
 };
 
