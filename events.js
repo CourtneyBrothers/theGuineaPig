@@ -55,3 +55,11 @@ header.addEventListener("mouseleave", () => outputTarget.innerHTML = "You left m
 
 let inputThing = document.getElementById("keypress-input");
 inputThing.onkeyup = ()=> outputTarget.innerHTML = inputThing.value;  
+
+let addColorButton = document.getElementById("add-color");
+console.log(addColorButton);
+let guineaPigElement = document.getElementById("guinea-pig");
+console.log(guineaPigElement);
+addColorButton.addEventListener("click", ()=>guineaPigElement.style.color = "blue");
+
+
