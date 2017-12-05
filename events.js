@@ -63,3 +63,7 @@ console.log(guineaPigElement);
 addColorButton.addEventListener("click", ()=>guineaPigElement.style.color = "blue");
 
 
+let hulkifyButton = document.getElementById("make-large");
+hulkifyButton.addEventListener("click", ()=>guineaPigElement.style.fontSize = "40rem");
+
+
