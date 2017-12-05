@@ -49,3 +49,9 @@ console.log("here");
 // };
 
 let guineaPigText = document.getElementById("guinea-pig");
+let header = document.getElementById("page-header");
+header.addEventListener("mouseover", () => outputTarget.innerHTML = "You moved your mouse over the header" )
+header.addEventListener("mouseleave", () => outputTarget.innerHTML = "You left me!" )
+
+let inputThing = document.getElementById("keypress-input");
+inputThing.onkeyup = ()=> outputTarget.innerHTML = inputThing.value;  
