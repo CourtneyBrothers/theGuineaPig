@@ -15,25 +15,37 @@ let section3 = section[4].innerHTML;
 let conclusion = section[5].innerHTML;
 console.log(body,section1,section2,section3,conclusion);
 
+section[0].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${introduction}`);
+section[1].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${body}`);
+section[2].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${section1}`);
+section[3].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${section2}`);
+section[4].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${section3}`);
+section[5].addEventListener("click", ()=> outputTarget.innerHTML=`You clicked on the ${conclusion}`);
 
 
 
 //get output-target div from HTML
 let clickAnywhere = document.getElementById("anywhere-on-body-cick-event");
+
 let outputTarget = document.getElementById("output-target");
 console.log(outputTarget);
 //set click event that bubbles anywhere on the body
-clickAnywhere.addEventListener("click", printToOutputTarget);
+// clickAnywhere.addEventListener("click", printToOutputTarget);
 
 
 console.log("here");
 
 //function that will change output target text
-function printToOutputTarget () {
+//function printToOutputTarget () {
     // var pForOutput = document.createElement("")
+
+//     outputTarget.innerHTML = `<p>You clicked on the ${sectionArray[0].innerHTML} section </p>`;
+//     outputTarget.innerHTML = `<p>You clicked on the ${sectionArray[1].innerHTML} section </p>`;
     
-    outputTarget.innerHTML = `<p>You clicked on the ${sectionArray.innerHTML} section </p>`
-    console.log("here");
-};
+    
+    
+    
+    
+// };
 
 let guineaPigText = document.getElementById("guinea-pig");
