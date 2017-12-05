@@ -66,4 +66,10 @@ addColorButton.addEventListener("click", ()=>guineaPigElement.style.color = "blu
 let hulkifyButton = document.getElementById("make-large");
 hulkifyButton.addEventListener("click", ()=>guineaPigElement.style.fontSize = "40rem");
 
+let captureButton = document.getElementById("add-border");
+captureButton.addEventListener("click", ()=>guineaPigElement.style.border = "1px solid blue" );
+
+let roundedButton = document.getElementById("add-rounding");
+roundedButton.addEventListener("click", ()=>guineaPigElement.classList.add("myClass"));
+
 
